@@ -28,20 +28,27 @@
         @media screen and (min-width: 700px) {
             main {
 
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                grid-auto-flow: dense;
 
             }
 
+/*
             .article-right {
 
-
+                grid-column: span 2;
             }
+*/
 
-            .article-left {
+            .article-wide {
+                grid-column: span 2;
 
             }
 
             .article-high {
-
+                grid-row: span 2;
             }
         }
     </style>
@@ -53,15 +60,15 @@
         <article class="article-high">1</article>
         <article>2</article>
         <article>3</article>
-        <article class="article-right">4</article>
+        <article class="article-wide">4</article>
         <article>5</article>
         <article>6</article>
-        <article class="article-left">7</article>
-        <article class="article-high">8</article>
+        <article class="article-wide">7</article>
+        <article class="article-high article-wide">8</article>
         <article class="article-high">9</article>
-        <article class="article-right">10</article>
+        <article class="article-wide">10</article>
         <article>11</article>
-        <article>12</article>
+        <article class="article-high">12</article>
         <article>13</article>
     </main>
 </body></html>

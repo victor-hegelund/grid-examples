@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <title>Grid placering</title>
     <style>
-
-        *{
+        * {
             box-sizing: border-box;
         }
-        img{
+
+        img {
             max-width: 100%;
         }
+
         main {
             max-width: 1000px;
             margin: 0 auto;
             padding: 10px;
             background: #ececec;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
 
         article {
             border: 1px solid #000;
-            padding:10px;
+            padding: 10px;
         }
 
 
 
-        @media screen and (min-width:768px){
-
-
-}
-
+        @media screen and (min-width:768px) {}
     </style>
 </head>
 
